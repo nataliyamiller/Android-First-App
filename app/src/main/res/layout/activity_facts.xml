@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ants stretch up when they wake up in the morning"
-        android:id="@+id/factTextView"
+        android:id="@+id/factTextsView"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/factTextView"
         android:layout_toEndOf="@+id/factTextView"
