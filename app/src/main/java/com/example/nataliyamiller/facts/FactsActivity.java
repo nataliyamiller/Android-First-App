@@ -24,7 +24,7 @@ public class FactsActivity extends AppCompatActivity {
 
         //Declare our View variables and assign the Views from the layout file
         final TextView factLabel = (TextView) findViewById(R.id.factTextsView);
-        Button showFactButton = (Button) findViewById(R.id.showFactButton);
+        final Button showFactButton = (Button) findViewById(R.id.showFactButton);
         final RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.relativeLayout);
 
         View.OnClickListener listener = new View.OnClickListener() {
@@ -33,6 +33,7 @@ public class FactsActivity extends AppCompatActivity {
                 String fact = mFactBook.getFact();
                 int color = mColorWheel.getColor();
                 relativeLayout.setBackgroundColor(color);
+                showFactButton.setTextColor(color);
 
                 // Update the label with our dynamic fact
                 factLabel.setText(fact);
