@@ -25,8 +25,8 @@ public class FactsActivity extends AppCompatActivity {
     private static final String KEY_COLOR = "KEY_COLOR";
     private FactBook mFactBook = new FactBook();
     private ColorWheel mColorWheel = new ColorWheel();
-    private String mFact;
-    private int mColor;
+    private String mFact = mFactBook.mFacts[0];
+    private int mColor = Color.parseColor(mColorWheel.mColors[8]);
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
