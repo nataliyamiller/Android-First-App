@@ -46,9 +46,6 @@ public class FactsActivity extends AppCompatActivity {
         mRelativeLayout.setBackgroundColor(mColor);
         mShowFactButton.setTextColor(mColor);
 
-
-
-
     }
 
     @Override
